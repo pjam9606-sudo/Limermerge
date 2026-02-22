@@ -1,6 +1,4 @@
-/* =======================
-   RESET Y BASE
-======================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,9 +12,7 @@ body {
   font-size: 13px;
 }
 
-/* =======================
-   HEADER
-======================= */
+
 header {
   background: linear-gradient(90deg, #00ff55, #00aa33);
   color: #000;
@@ -30,9 +26,7 @@ header h1 {
   font-weight: bold;
 }
 
-/* =======================
-   CONTENEDOR PRINCIPAL
-======================= */
+
 main {
   padding: 15px;
 }
@@ -44,9 +38,7 @@ main {
   width: 100%;
 }
 
-/* =======================
-   PANEL DEL MINERO
-======================= */
+
 #miner-panel {
   width: 220px;
   background: #0b2e1a;
@@ -62,7 +54,7 @@ main {
   text-align: center;
 }
 
-/* INPUT BUSCADOR */
+
 #minerID {
   width: 100%;
   padding: 4px;
@@ -76,7 +68,7 @@ main {
   
 }
 
-/* SUGERENCIAS */
+
 .suggestions {
   background: #000;
   border: 1px solid #00ff66;
@@ -101,7 +93,7 @@ main {
   height: auto;
 }
 
-/* IMAGEN DEL MINERO */
+
 #miner-img {
   display: block;
   margin: 10px auto;
@@ -111,7 +103,7 @@ main {
   border-radius: 10px;
 }
 
-/* TEXTO PANEL */
+
 #miner-panel p {
   font-size: 17px;
   margin: 4px 0;
@@ -119,7 +111,7 @@ main {
   
 }
 
-/* INPUT PRECIO */
+
 #lmt-price {
   width: 50%;
   padding: 5px;
@@ -132,9 +124,7 @@ main {
   
 }
 
-/* =======================
-   TABLA
-======================= */
+
 table {
   width: 100%;
   max-width: 800px;
@@ -160,48 +150,44 @@ td {
   
 }
 
-/* IMÁGENES DE LA TABLA */
+
 table img {
   width: 18px;
   height: auto;
 }
 
-/* =======================
-   COLORES POR NIVEL
-======================= */
+
 tr:nth-child(2),
 tr:nth-child(3),
 tr:nth-child(4) {
-  background: #0f5c2f; /* L2 verde oscuro */
+  background: #0f5c2f; 
 }
 
 tr:nth-child(5),
 tr:nth-child(6),
 tr:nth-child(7) {
-  background: #1e90ff; /* L3 celeste */
+  background: #1e90ff; 
 }
 
 tr:nth-child(8),
 tr:nth-child(9),
 tr:nth-child(10) {
-  background: #7b2cbf; /* L4 morado */
+  background: #7b2cbf; 
 }
 
 tr:nth-child(11),
 tr:nth-child(12),
 tr:nth-child(13) {
-  background: #d4a017; /* L5 mostaza */
+  background: #d4a017; 
 }
 
 tr:nth-child(14),
 tr:nth-child(15),
 tr:nth-child(16) {
-  background: #ff4f81; /* L6 rosado */
+  background: #ff4f81; 
 }
 
-/* =======================
-   FOOTER
-======================= */
+
 footer {
   text-align: center;
   margin-top: 20px;
@@ -210,9 +196,7 @@ footer {
   font-weight: bold;
 }
 
-/* =======================
-   RESPONSIVE (CELULAR)
-======================= */
+
 @media (max-width: 768px) {
   .hds {
     flex-direction: column;
