@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample HTML Page</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+  <header>
+    <h1>Miner merge calculator</h1>
+  </header>
+  <main>
+    
+    <div class="hds">
+      
+        
+      
+
+      <!-- Panel izquierdo -->
+      <div id="miner-panel">
+        <h2>Miner Name</h2>
+        <input type="text" id="minerID" placeholder="Nombre del minero" autocomplete="off">
+        <div id="suggestions" class="suggestions"></div>
+        <img id="miner-img" src="hourglass.svg" alt="Miner">
+        <p>Power: <span id="miner-power">0</span></p>
+        <p>Cells: <span id="miner-cells">0</span></p>
+        <p>Precio LMT: <input type="number" id="lmt-price" value="0"></p>
+        <p>Ratio: <span id="lmt-ratio">0</span></p>
+      </div>
+      <table>
+        <tr>
+          <th>Lvl</th>
+          <th>Pcs</th>
+          <th>Qty</th>
+          <th>Cost</th>
+          <th>Fee</th>
+          <th>Fee+Parts</th>
+          <th>Power</th>
+          <th>Final Cost</th>
+          <th>Ratio [Th/LMT]</th>
+        </tr>
+
+        <!-- Nivel 2 -->
+        <tr>
+          <td rowspan="3">
+            <img src="levels/L2.svg">
+          </td>
+          <td><img src="Piezas/HL1.svg"></td>
+          <td id="HL1">0</td>
+          <td id="costHL1">0</td>
+          <td rowspan="3" id="FEEL2">0</td>
+          <td rowspan="3" id="F+P2">0</td>
+          <td rowspan="3" id="PLV2">0</td>
+          <td rowspan="3" id="FC2">0</td>
+          <td rowspan="3" id="R2">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/CL1.svg"></td>
+          <td id="CL1">0</td>
+          <td id="costCL1">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/PUL1.svg"></td>
+          <td id="PUL1">0</td>
+          <td id="costPUL1">0</td>
+        </tr>
+
+        <!-- Nivel 3 -->
+        <tr>
+          <td rowspan="3">
+            <img src="levels/L3.svg">
+          </td>
+          <td><img src="Piezas/HL2.svg"></td>
+          <td id="HL2">0</td>
+          <td id="costHL2">0</td>
+          <td rowspan="3" id="FEEL3">0</td>
+          <td rowspan="3" id="F+P3">0</td>
+          <td rowspan="3" id="PLV3">0</td>
+          <td rowspan="3" id="FC3">0</td>
+          <td rowspan="3" id="R3">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/CL2.svg"></td>
+          <td id="CL2">0</td>
+          <td id="costCL2">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/PUL2.svg"></td>
+          <td id="PUL2">0</td>
+          <td id="costPUL2">0</td>
+        </tr>
+
+
+        <!-- Nivel 4 -->
+        <tr>
+          <td rowspan="3">
+            <img src="levels/L4.svg">
+          </td>
+          <td><img src="Piezas/HL3.svg"></td>
+          <td id="HL3">0</td>
+          <td id="costHL3">0</td>
+          <td rowspan="3" id="FEEL4">0</td>
+          <td rowspan="3" id="F+P4">0</td>
+          <td rowspan="3" id="PLV4">0</td>
+          <td rowspan="3" id="FC4">0</td>
+          <td rowspan="3" id="R4">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/CL3.svg"></td>
+          <td id="CL3">0</td>
+          <td id="costCL3">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/PUL3.svg"></td>
+          <td id="PUL3">0</td>
+          <td id="costPUL3">0</td>
+        </tr>
+
+        <!-- Nivel 5 -->
+        <tr>
+          <td rowspan="3">
+            <img src="levels/L5.svg" >
+          </td>
+          <td><img src="Piezas/HL4.svg"></td>
+          <td id="HL4">0</td>
+          <td id="costHL4">0</td>
+          <td rowspan="3" id="FEEL5">0</td>
+          <td rowspan="3" id="F+P5">0</td>
+          <td rowspan="3" id="PLV5">0</td>
+          <td rowspan="3" id="FC5">0</td>
+          <td rowspan="3" id="R5">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/CL4.svg"></td>
+          <td id="CL4">0</td>
+          <td id="costCL4">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/PUL4.svg"></td>
+          <td id="PUL4">0</td>
+          <td id="costPUL4">0</td>
+        </tr>
+
+        <!-- Nivel 6 -->
+        <tr>
+          <td rowspan="3">
+            <img src="levels/L6.svg">
+          </td>
+          <td><img src="Piezas/HL5.svg"></td>
+          <td id="HL5">0</td>
+          <td id="costHL5">0</td>
+          <td rowspan="3" id="FEEL6">0</td>
+          <td rowspan="3" id="F+P6">0</td>
+          <td rowspan="3" id="PLV6">0</td>
+          <td rowspan="3" id="FC6">0</td>
+          <td rowspan="3" id="R6">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/CL5.svg"></td>
+          <td id="CL5">0</td>
+          <td id="costCL5">0</td>
+        </tr>
+        <tr>
+          <td><img src="Piezas/PUL5.svg"></td>
+          <td id="PUL5">0</td>
+          <td id="costPUL5">0</td>
+        </tr>
+      </table>
+    </div>
+      <p>This is a simple HTML page created by zacks.</p>
+
+      <section>
+        <h2>Features</h2>
+        <ul>
+          <li>Clean Layout</li>
+          <li>Responsive Design</li>
+          <li>Easy to Customize</li>
+        </ul>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sample Page. All rights reserved.</p>
+  </footer>
+ <script src="app.js"></script>
+
+</body>
+
+
